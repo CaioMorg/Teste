@@ -1,14 +1,36 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+
+    <link rel="shortcut icon" type="imagex/png" href="lua.png">
 	<title>Site - Github</title>
 	<meta charset="utf-8">
     <style>
+      @import url('https://fonts.googleapis.com/css2?family=Abel&family=DotGothic16&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+      *{ margin: 0;
+        padding: 0;
+        box-sizing: border-box; 
+        font-family: "Poppins", sans-serif;
+        
+
+      }
         body{
-            background: darkblue;
-            color: silver;
+            display: flex;
+            background: 	#220769;
+            
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            flex-direction: column;
+            color: #d6d089;
             font-size: 40px;
             font-weight: bold;
+        }
+        .backstar{
+            background-image: url(strela.gif);
+
+
         }
         a:link {
             color: #F1CA04;
@@ -24,21 +46,100 @@
             color: #0C0C0B; 
         }
         h1{
-            color: silver;
+            color: #d6d089;
+            font-family: "Abel", sans-serif;
+            font-weight: 400;
+            font-style: normal;
             font-size: 50px;
-            font-weight: bold;
         }
         h2{
-            color: #07B1B4;
+            position: relative;
+            font-size: 6em;
+            color: transparent;
+            -webkit-text-stroke: 2px #d6d089;
             font-size: 30px;
-            font-style: italic;
+            line-height: 2em;
+            text-transform: uppercase;
+            cursor: default;
         }
+        h2 span{ display: inline-flex;
+                 transition: 0.5s easy-in-out;
+                 filter: drop-shadow(0 0 15px #d6d089);
+
+
+        }    
+        h2 span:nth-child(even){ 
+            overflow: hidden;
+            letter-spacing: -1em;
+
+        }
+        h2:hover span:nth-child(even){
+            letter-spacing: 0;
+            color:#d6d089;
+
+
+        }
+          
+        .container{
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            overflow:hidden;
+        }
+
+        .bubbles{
+            position: relative;
+            display: flex;
+
+        }
+        .bubbles span{
+            position: relative;
+            min-width: 30px;
+            height: 30px;
+            background: gold;
+            box-shadow: 0 9 9 10px gold,
+            0 0 50px gold,
+            0 0 100px gold;
+            margin: 0 4px;
+            border-radius: 50%;
+            animation: animate 15s linear infinite;
+            animation-duration: calc(75s / var(--i));
+
+        }
+       .bubbles span:nth-child(even){
+            position: relative;
+            min-width: 30px;
+            height: 30px;
+            background: silver;
+            box-shadow: 0 9 9 10px silver,
+            0 0 0 50px silver,
+            0 0 0 100px silver;
+            
+        } 
+            ;
+        @keyframes animate{
+            0%{
+            transform:translateY(100vh) scale(0);
+
+            }
+            100%{
+            transform:translateY(-10vh) scale(1);
+
+            }
+        }
+
+
+  
+
+
+
         h3{
             color: brown;
             font-size: 20px;
         }
         hr{
-            border-color: black;
+            border-color:#d7d350
+;
             width: 100%;
             size: 3;
             align: left;
@@ -47,22 +148,26 @@
     
         </style>
 </head>
-<body>
-	<center><h1>Testando página WEB</h1></center>
-    <hr color="red">
-	<hr color="black">
-    <table border="2" width="50%" height="50%" valign="middle" bgcolor="white" bordercolor="black">
-        <caption><h1><b>Exemplo de Tabela</b></h1></caption>
-        </font>
-        <tr>
-        <th colspan="3" bgcolor="yellow"><font face="arial" size="20" color="black">Testando o site</td>
-        </tr>
-        <tr>
-        <th bgcolor="blue"><font face="arial" size="20" color="white"> Testando desenvolvimento Web </th>
-        <th bgcolor="red"><font face="arial" size="20" color="white">Deus me ajude</th>
-        </tr>
+<body> <diV class="backstar">
+	        <center><h2><span>T</span><span>estando site</span></h2>  </center>
+        </diV><hr>
+    
+        <h2><span>✷</span><span>Bem-Vindo ✷</span></h2>
+       <table border="2" width="50%" height="50%" valign="middle" bgcolor="white" bordercolor="black">
+      
+            <caption><h1><b>Exemplo de Tabela</b></h1></caption>
+            </font>
+            <tr>
+                <th colspan="3" bgcolor="yellow"><font face="arial" size="20" color="black">Testando o site</td>
+            </tr>
+            <tr>
+                <th bgcolor="red"><font face="arial" size="20" color="white"> Testando desenvolvimento Web </th>
+                <th bgcolor="blue"> <font face="arial" size="20" color="white">Deus me ajude</th>
+            </tr>
+  
         </table>
-	
-	<div align="right">Novos Web Designers</div>
+    
+        <div align="right">Novos Web Designers</div>
+    
 </body>
 </html>
