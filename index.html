@@ -3,155 +3,19 @@
 <head>
 
     <link rel="shortcut icon" type="imagex/png" href="lua.png">
+    <link rel="stylesheet" type="text/css" href="noite.css" media="screen" />
 	<title>Site - Github</title>
 	<meta charset="utf-8">
-    <style>
-      @import url('https://fonts.googleapis.com/css2?family=Abel&family=DotGothic16&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-      *{ margin: 0;
-        padding: 0;
-        box-sizing: border-box; 
-        font-family: "Poppins", sans-serif;
-        
-
-      }
-        body{
-            display: flex;
-            background: 	#220769;
-            
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            flex-direction: column;
-            color: #d6d089;
-            font-size: 40px;
-            font-weight: bold;
-        }
-        .backstar{
-            background-image: url(strela.gif);
-
-
-        }
-        a:link {
-            color: #F1CA04;
-            text-decoration:none; 
-        }
-        a:visited {
-            color: red;
-        }
-        a:hover {
-            color: #F80552;
-        }
-        a:active {
-            color: #0C0C0B; 
-        }
-        h1{
-            color: #d6d089;
-            font-family: "Abel", sans-serif;
-            font-weight: 400;
-            font-style: normal;
-            font-size: 50px;
-        }
-        h2{
-            position: relative;
-            font-size: 6em;
-            color: transparent;
-            -webkit-text-stroke: 2px #d6d089;
-            font-size: 30px;
-            line-height: 2em;
-            text-transform: uppercase;
-            cursor: default;
-        }
-        h2 span{ display: inline-flex;
-                 transition: 0.5s easy-in-out;
-                 filter: drop-shadow(0 0 15px #d6d089);
-
-
-        }    
-        h2 span:nth-child(even){ 
-            overflow: hidden;
-            letter-spacing: -1em;
-
-        }
-        h2:hover span:nth-child(even){
-            letter-spacing: 0;
-            color:#d6d089;
-
-
-        }
-          
-        .container{
-            position: relative;
-            width: 100%;
-            height: 100vh;
-            overflow:hidden;
-        }
-
-        .bubbles{
-            position: relative;
-            display: flex;
-
-        }
-        .bubbles span{
-            position: relative;
-            min-width: 30px;
-            height: 30px;
-            background: gold;
-            box-shadow: 0 9 9 10px gold,
-            0 0 50px gold,
-            0 0 100px gold;
-            margin: 0 4px;
-            border-radius: 50%;
-            animation: animate 15s linear infinite;
-            animation-duration: calc(75s / var(--i));
-
-        }
-       .bubbles span:nth-child(even){
-            position: relative;
-            min-width: 30px;
-            height: 30px;
-            background: silver;
-            box-shadow: 0 9 9 10px silver,
-            0 0 0 50px silver,
-            0 0 0 100px silver;
-            
-        } 
-            ;
-        @keyframes animate{
-            0%{
-            transform:translateY(100vh) scale(0);
-
-            }
-            100%{
-            transform:translateY(-10vh) scale(1);
-
-            }
-        }
-
-
-  
-
-
-
-        h3{
-            color: brown;
-            font-size: 20px;
-        }
-        hr{
-            border-color:#d7d350
-;
-            width: 100%;
-            size: 3;
-            align: left;
-        }
-
-    
-        </style>
 </head>
 <body> <diV class="backstar">
 	        <center><h2><span>T</span><span>estando site</span></h2>  </center>
         </diV><hr>
-    
+        <!-- -->
+        <div class ="trilho" id = "trilho">
+            <div class ="indicador"></div>
+        </div>
+        <script src="main.js"></script>
         <h2><span>✷</span><span>Bem-Vindo ✷</span></h2>
        <table border="2" width="50%" height="50%" valign="middle" bgcolor="white" bordercolor="black">
       
